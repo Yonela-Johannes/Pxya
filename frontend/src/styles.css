@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --p-cl: #52474D;
+  --sp-cl: #1e1d1d;
+  --s-cl: #DD4991;
+  /* --t-cl: "#"; */
+  --p-cl-alt: #EEBD4C;
+  --s-cl-alt: #EEBD4C;
+  --t-cl-alt: #C3263B;
+
+  --p-bg: #F5F5F2;
+  --s-bg: #FFC9DB;
+  --t-bg: #aeaeae;
+  --p-bg-alt: #FF85A9;
+
+  --loader-bg: #ffffffdd;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

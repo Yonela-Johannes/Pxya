@@ -1,0 +1,39 @@
+<app-not-found
+  [visible]="!product"
+  notFoundMessage="Product Not Found!"
+  resetLinkRoute="/"
+  resetLinkText="Back to Homepage"
+>
+</app-not-found>
+
+<div *ngIf="product" class="container">
+  <img src="data:text/html;base64,{{product.imageUrl}}"  [alt]="product.name" />
+  <div class="details">
+    <div class="header">
+      <div class="name">
+        {{product.name}}
+      </div>
+      <span class="favorite {{product.favorite ? '' : 'not'}}">
+        ❤
+      </span>
+    </div>
+      <div class="rating">
+        <star-rating
+          [value]="product.stars"
+          [totalstars]="5"
+          checkedcolor="#FFC9DB"
+          uncheckedcolor="#aeaeae"
+          size="30px"
+          [readonly]="true"
+        >
+        </star-rating>
+        <div class="description">
+          {{product.description}}
+        </div>
+        <div class="price">
+         R{{product.price}}
+        </div>
+        <button (click)="addToCart()">Add to Cart</button>
+      </div>
+  </div>
+</div>

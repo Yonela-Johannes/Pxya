@@ -1,0 +1,39 @@
+<header>
+  <div class="container">
+    <app-search></app-search>
+    <div class="logo__container">
+      <img class="logo" src="../../../../assets/data/logopinky.png" />
+      <p class="logo__title">Be Pleasured By Pinky</p>
+    </div>
+    <nav>
+       <ul>
+        <li>
+          <a routerLink="/">Home</a>
+        </li>
+        <li>
+          <a routerLink="/shop">Shop</a>
+        </li>
+        <li>
+          <a routerLink="/cart-page">Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span></a>
+        </li>
+        <li>
+          <a routerLink="/about">About</a>
+        </li>
+        <li>
+          <a routerLink="/about">Contact</a>
+        </li>
+        <li *ngIf="!isAuth">
+          <a routerLink="/login">Login</a>
+        </li>
+        <li *ngIf="isAuth" class="menu-container">
+          <a routerLink="/dashboard">{{user.name}}</a>
+          <div class="menu">
+            <a routerLink="/profile">Profile</a>
+            <a routerLink="/orders">Orders</a>
+            <a (click)="logout()">Logout</a>
+          </div>
+        </li>
+       </ul>
+    </nav>
+  </div>
+</header>

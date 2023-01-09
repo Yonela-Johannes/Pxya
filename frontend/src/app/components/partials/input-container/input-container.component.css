@@ -1,0 +1,23 @@
+.container{
+  position: relative;
+  margin-bottom: .5rem;
+  padding-top: .3rem;
+  border: 1px solid grey;
+}
+
+
+label{
+  display: inline-block;
+  margin-left: .5rem;
+  font-size: 1rem;
+  color: grey;
+}
+
+.content{
+  margin-left: .5rem;
+  font-size: .7rem;
+  padding: 0 0 .5rem;
+  display: flex;
+  height: 2.7rem;
+  align-items: center;
+}

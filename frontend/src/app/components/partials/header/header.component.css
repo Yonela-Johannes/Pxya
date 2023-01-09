@@ -1,0 +1,76 @@
+header {
+  background-color: var(--s-bg);
+  height: 120px;
+  z-index: 99999;
+}
+
+.logo__container{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  height: 60px;
+  width: 45px;
+  object-fit: cover;
+  margin: auto 10px;
+}
+
+.logo__title{
+  font-size: 22px;
+  color: var(--p-cl);
+}
+a{
+  color: var(--p-cl);
+  padding: 20px 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover, .menu a:hover{
+  color: var(--s-cl-alt);
+  background-color: var(--p-cl);
+  transition: .2s ease;
+}
+.container{
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+ul a{
+  min-width: 7rem;
+  display: inline-block;
+}
+
+a span{
+  color: var(--sp-cl);
+  background-color: var(--p-cl-alt);
+  padding: .6rem .85rem;
+  font-size: .9rem;
+  border-radius: 100rem;
+}
+
+.menu-container{
+  position: relative;
+  transition: .3s ease;
+}
+.menu{
+  position: absolute;
+  background-color: var(--t-bg);
+  z-index: 99999;
+  display: none;
+}
+
+.menu-container:hover .menu{
+  display: block;
+}
+.menu a{
+  color: var(--sp-cl);
+}

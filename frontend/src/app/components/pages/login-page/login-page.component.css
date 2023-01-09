@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 3rem;
+  height: 60vh;
+}
+
+.details{
+  width: 30rem;
+  background-color: var(--s-bg);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: center;
+}
+
+.login a{
+  color: var(--p-cl);
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.login a:hover{
+  color: var(--s-cl-alt)
+}

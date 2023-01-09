@@ -1,0 +1,126 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 1.5rem;
+  margin-top: .5rem;
+}
+
+
+ul{
+  display: flex;
+  flex-direction: column;
+  flex: 3 0;
+  justify-content: space-evenly;
+  border: 1px solid var(--s-bg);
+  border-radius: 1px;
+  list-style: none;
+  margin: .5rem;
+  padding: 0;
+}
+
+ul a{
+  text-decoration: none;
+  color: var(--p-cl);
+}
+
+ul li{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--t-bg);
+}
+
+ul li:last-child{
+  border: none;
+}
+
+li img{
+  width: 5.2rem;
+  height:  5rem;
+  border-radius: 1px;
+  object-fit: cover;
+  margin: .7rem 0;
+}
+
+li div:not(:first-child){
+  flex-basis: 18%;
+}
+
+li select{
+  width: 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--t-bg);
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.price{
+  color: var(--p-cl);
+}
+
+li .remove_button{
+  border-radius: 1px;
+  border: none;
+  padding: .5rem;
+  color: var(--sp-cl);
+  opacity: .7;
+  outline: none;
+}
+
+li .remove_button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.checkout{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 3;
+  height: 20rem;
+  background-color: var(--s-bg);
+  border-radius: 1px;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.checkout > div {
+  font-size: 1.2rem;
+  margin: 1rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product_count::before{
+  content: "Total Items ";
+  color: grey;
+}
+
+.total_price::before{
+  content: "Totlal Price ";
+  color: grey;
+}
+
+.checkout a {
+  color: var(--sp-cl);
+  padding: 1rem;
+  text-decoration: none;
+  background: var(--p-cl-alt);
+  border-radius: 1px;
+  text-align: center;
+  justify-self: center;
+  cursor: pointer;
+  opacity: .7;
+  transition: all .2s ease;
+}
+
+.checkout a:hover{
+  opacity: 1;
+}

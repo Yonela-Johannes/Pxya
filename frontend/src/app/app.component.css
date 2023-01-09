@@ -1,0 +1,15 @@
+.overlay{
+  display: flex;
+  min-height: calc(100vh-120px);
+  flex-direction: column;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+}
+
+.body{
+  padding-top: 180px;
+}

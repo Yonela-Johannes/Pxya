@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="details">
+    <app-title title="Signin To Your Account"></app-title>
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+      <text-input
+        [control]="fc.email"
+        [showErrorsWhen]="isSubmitted"
+        type="email"
+        label="Email"
+        placeholder="Enter Your Email"
+      >
+      </text-input>
+      <text-input
+        [control]="fc.password"
+        [showErrorsWhen]="isSubmitted"
+        type="password"
+        label="Password"
+        placeholder="Enter Your Password"
+      >
+      </text-input>
+      <default-button>
+      </default-button>
+      <div class="login">
+        Not a user? &nbsp;
+        <a routerLink="/register" [queryParams]="{returnUrl: returnUrl}">
+          Signup
+        </a>
+      </div>
+    </form>
+  </div>
+  <img src="/assets/data/safety.png" alt=" landing " />
+</div>
