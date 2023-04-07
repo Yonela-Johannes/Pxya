@@ -11,9 +11,6 @@ export class InputContainerComponent implements OnInit {
   label!:string;
   @Input()
   placeholder!:string;
-
-
-
   ngOnInit(): void {
 
   }

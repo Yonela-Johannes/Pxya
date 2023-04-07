@@ -50,13 +50,11 @@ export class CheckoutPageComponent implements OnInit {
     }
     this.order.name = this.fc.name.value;
     this.order.address = this.fc.address.value
-
     this.orderService.create(this.order).subscribe({
       next: () => {
         this.router.navigateByUrl('/payment')
       },
       error: (errorResponse) => {
-        console.log("Inside!!!!")
         this.toastrService.error(errorResponse.error, 'Cart');
       }
     })

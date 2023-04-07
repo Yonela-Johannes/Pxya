@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HTTP_INTERCEPTORS  } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
@@ -28,7 +29,6 @@ import { OrderItemsListComponent } from './components/partials/order-items-list/
 import { LandingComponent } from './components/pages/landing/landing.component';
 import { MapComponent } from './components/partials/map/map.component';
 import { AuthInterceptor } from './auth/auth.interceptor';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +55,7 @@ import { AuthInterceptor } from './auth/auth.interceptor';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule,
     RatingModule,
     HttpClientModule,

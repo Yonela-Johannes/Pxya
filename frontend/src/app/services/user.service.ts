@@ -50,13 +50,13 @@ export class UserService {
           this.setUserToLocalStorage(user);
           this.userSubject.next(user);
           this.toastrService.success(
-            `Welcome to Be Pleasured By Pinky`,
-            'Register successful'
+            `Welcome to this app ${user.name}`,
+            'Register successfull'
           )
         },
         error: (errorResponse) => {
           this.toastrService.error(errorResponse.error,
-            'Register Falied!'
+            'Register Failed!'
           )
         }
       })

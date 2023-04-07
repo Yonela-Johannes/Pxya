@@ -8,10 +8,13 @@ header {
   display: flex;
   align-items: center;
 }
+.logo__container a:hover{
+  background-color: transparent;
+}
 .logo{
   height: 60px;
   width: 45px;
-  object-fit: cover;
+  object-fit: contain;
   margin: auto 10px;
 }
 

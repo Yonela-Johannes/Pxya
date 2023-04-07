@@ -2,7 +2,7 @@ import { LatLng } from "leaflet";
 import { CartItem } from "./CartItem";
 
 export class Order {
-  id!: number;
+  id!: string;
   items!: CartItem[];
   totalPrice!: number;
   name!: string;

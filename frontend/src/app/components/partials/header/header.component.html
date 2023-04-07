@@ -1,9 +1,9 @@
 <header>
   <div class="container">
-    <app-search></app-search>
     <div class="logo__container">
-      <img class="logo" src="../../../../assets/data/logopinky.png" />
-      <p class="logo__title">Be Pleasured By Pinky</p>
+      <a routerLink="/">
+        <img class="logo" src="../../../../assets/data/alphagreen.png" />
+      </a>
     </div>
     <nav>
        <ul>
@@ -11,16 +11,7 @@
           <a routerLink="/">Home</a>
         </li>
         <li>
-          <a routerLink="/shop">Shop</a>
-        </li>
-        <li>
           <a routerLink="/cart-page">Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span></a>
-        </li>
-        <li>
-          <a routerLink="/about">About</a>
-        </li>
-        <li>
-          <a routerLink="/about">Contact</a>
         </li>
         <li *ngIf="!isAuth">
           <a routerLink="/login">Login</a>
@@ -33,7 +24,7 @@
             <a (click)="logout()">Logout</a>
           </div>
         </li>
-       </ul>
+      </ul>
     </nav>
   </div>
 </header>
