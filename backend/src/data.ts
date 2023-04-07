@@ -1,9 +1,7 @@
-import fs from 'fs'
-
 export const products: any [] = [
   {
     name: 'Pxya',
-    imageUrl: fs.readFileSync(`./img/1.jpeg`, 'base64'),
+    imageUrl: `./img/1.jpeg`,
     price: 400,
     favorite: false,
     stars: 4,
@@ -11,7 +9,7 @@ export const products: any [] = [
   },
   {
     name: 'Sxyb',
-    imageUrl: fs.readFileSync(`./img/2.jpg`, 'base64'),
+    imageUrl: `./img/2.jpg`,
     price: 200,
     favorite: true,
     stars: 4,
@@ -19,7 +17,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyc',
-    imageUrl: fs.readFileSync(`./img/3.jpg`, 'base64'),
+    imageUrl: `./img/3.jpg`,
     favorite: false,
     stars: 3,
     price: 390,
@@ -28,7 +26,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyd',
-    imageUrl: fs.readFileSync(`./img/4.jpg`, 'base64'),
+    imageUrl: `./img/4.jpg`,
     price: 350,
     favorite: false,
     stars: 4,
@@ -36,7 +34,7 @@ export const products: any [] = [
   },
   {
     name: 'Pxye',
-    imageUrl: fs.readFileSync(`./img/4.jpg`, 'base64'),
+    imageUrl: `./img/4.jpg`,
     price: 300,
     favorite: true,
     stars: 4,
@@ -44,7 +42,7 @@ export const products: any [] = [
   },
   {
     name: 'Pxyf',
-    imageUrl: fs.readFileSync(`./img/5.jpg`, 'base64'),
+    imageUrl: `./img/5.jpg`,
     price: 300,
     favorite: true,
     stars: 4,
@@ -52,7 +50,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyg',
-    imageUrl: fs.readFileSync(`./img/6.jpeg`, 'base64'),
+    imageUrl: `./img/6.jpeg`,
     price: 150,
     favorite: true,
     stars: 4,
@@ -60,7 +58,7 @@ export const products: any [] = [
   },
   {
     name: 'Pxyh',
-    imageUrl: fs.readFileSync(`./img/7.webp`, 'base64'),
+    imageUrl: `./img/7.webp`,
     price: 450,
     favorite: true,
     stars: 4,
@@ -68,7 +66,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyj',
-    imageUrl: fs.readFileSync(`./img/8.jpeg`, 'base64'),
+    imageUrl: `./img/8.jpeg`,
     price: 580,
     favorite: true,
     stars: 4,
@@ -76,7 +74,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyi',
-    imageUrl: fs.readFileSync(`./img/9.jpg`, 'base64'),
+    imageUrl: `./img/9.jpg`,
     price: 150,
     favorite: true,
     stars: 4,
@@ -84,7 +82,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyk',
-    imageUrl: fs.readFileSync(`./img/10.jpeg`, 'base64'),
+    imageUrl: `./img/10.jpeg`,
     price: 350,
     favorite: true,
     stars: 4,
@@ -92,7 +90,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyl',
-    imageUrl: fs.readFileSync(`./img/11.jpg`, 'base64'),
+    imageUrl: `./img/11.jpg`,
     price: 150,
     favorite: true,
     stars: 4,
@@ -100,7 +98,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxym',
-    imageUrl: fs.readFileSync(`./img/12.jpeg`, 'base64'),
+    imageUrl: `./img/12.jpeg`,
     price: 500,
     favorite: true,
     stars: 4,
@@ -108,7 +106,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyn',
-    imageUrl: fs.readFileSync(`./img/12.jpg`, 'base64'),
+    imageUrl: `./img/12.jpg`,
     price: 150,
     favorite: true,
     stars: 4,
@@ -116,7 +114,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyo',
-    imageUrl: fs.readFileSync(`./img/13.jpg`, 'base64'),
+    imageUrl: `./img/13.jpg`,
     price: 180,
     favorite: true,
     stars: 4,
@@ -124,7 +122,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyp',
-    imageUrl: fs.readFileSync(`./img/14.jpg`, 'base64'),
+    imageUrl: `./img/14.jpg`,
     price: 400,
     favorite: true,
     stars: 4,
@@ -132,7 +130,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyq',
-    imageUrl: fs.readFileSync(`./img/15.jpeg`, 'base64'),
+    imageUrl: `./img/15.jpeg`,
     price: 400,
     favorite: false,
     stars: 4,
@@ -140,7 +138,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyr',
-    imageUrl: fs.readFileSync(`./img/16.jpeg`, 'base64'),
+    imageUrl: `./img/16.jpeg`,
     price: 400,
     favorite: false,
     stars: 4,
@@ -148,7 +146,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxys',
-    imageUrl: fs.readFileSync(`./img/17.jpg`, 'base64'),
+    imageUrl: `./img/17.jpg`,
     price: 220,
     favorite: false,
     stars: 4,
@@ -156,7 +154,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyt',
-    imageUrl: fs.readFileSync(`./img/18.jpeg`, 'base64'),
+    imageUrl: `./img/18.jpeg`,
     price: 250,
     favorite: false,
     stars: 4,
@@ -164,7 +162,7 @@ export const products: any [] = [
   },
   {
     name: 'Mxyuuz',
-    imageUrl: fs.readFileSync(`./img/19.jpg`, 'base64'),
+    imageUrl: `./img/19.jpg`,
     price: 650,
     favorite: false,
     stars: 4,
@@ -172,7 +170,7 @@ export const products: any [] = [
   },
   {
     name: 'Pretty Love Steve',
-    imageUrl: fs.readFileSync(`./img/20.webp`, 'base64'),
+    imageUrl: `./img/20.webp`,
     price: 300,
     favorite: false,
     stars: 4,
