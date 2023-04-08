@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Yonela-Johannes/pinky/issues"
   },
+  "engines": {
+    "node": "16.15.1"
+  },
   "homepage": "https://github.com/Yonela-Johannes/pinky#readme"
 }
