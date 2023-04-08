@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { FooterComponent } from './components/partials/footer/footer.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import { RatingModule } from 'ng-starrating';
 import { SearchComponent } from './components/partials/search/search.component';
 import { ProductPageComponent } from './components/pages/product-page/product-page.component';
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
@@ -57,7 +56,6 @@ import { AuthInterceptor } from './auth/auth.interceptor';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    RatingModule,
     HttpClientModule,
     ReactiveFormsModule,
     ToastrModule.forRoot({
