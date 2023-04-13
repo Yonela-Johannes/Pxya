@@ -16,14 +16,16 @@ app.use(cors({
     credentials: true,
     origin: ['http://localhost:4200']
 }));
-app.use(express.static('public'));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname,'public', 'index.html'))
-})
+
+
 app.use("/api/products", productRouter);
 app.use("/api/users", userRouter)
 app.use("/api/orders", orderRouter)
 
+app.use(express.static('public'));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname,'public', 'index.html'))
+})
 
 const port  = process.env.PORT || 5000;
 app.listen(port, () => {
