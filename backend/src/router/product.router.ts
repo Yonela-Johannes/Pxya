@@ -17,15 +17,12 @@ router.get("/seed", expressAsyncHandler (
 
 router.get("/", expressAsyncHandler(
   async (req, res) => {
-      console.log("We are inside bro!!")
         const DBproducts = await ProductModel.find()
-        console.log("This is the products", DBproducts)
         res.send(DBproducts)
     }
 ))
 
 router.get("/search/:search", (req, res) => {
-  console.log("I am searching bro")
     const search = req.params.search;
     const product = products.filter(food => food.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
     res.send(product)
