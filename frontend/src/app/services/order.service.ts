@@ -11,7 +11,6 @@ export class OrderService {
   constructor(private http: HttpClient) { }
 
   create(order: Order){
-    console.log("This is creating the order bruv!!", order)
     return this.http.post<Order>(ORDER_CREATE_URL, order);
   }
 }
