@@ -1,5 +1,5 @@
 import { environment } from 'src/environment/environment';
-const BASE_URL = environment.production? '' : 'http://localhost:5000';
+const BASE_URL = environment.production? '' : 'https://pxya.herokuapp.com' //'http://localhost:5000';
 
 export const PRODUCTS_URL = BASE_URL + '/api/products'
 export const PRODUCTS_BY_SEARCH_URL = PRODUCTS_URL + '/search/'
