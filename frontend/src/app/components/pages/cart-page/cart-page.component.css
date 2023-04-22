@@ -104,7 +104,7 @@ li .remove_button:hover{
 }
 
 .total_price::before{
-  content: "Totlal Price ";
+  content: "Total Price ";
   color: grey;
 }
 

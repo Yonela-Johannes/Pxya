@@ -9,7 +9,7 @@
   <ul>
     <li *ngFor="let cartItem of cart.items">
       <div>
-        <img src="data:text/html;base64,{{cartItem.product.imageUrl}}" [alt]="cartItem.product.name">
+        <img src="{{cartItem.product.imageUrl}}" [alt]="cartItem.product.name">
       </div>
       <div>
         <a routerLink="/products/{{cartItem.product.id}}">
